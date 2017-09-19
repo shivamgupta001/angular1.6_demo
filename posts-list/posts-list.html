@@ -1,0 +1,4 @@
+<input type="text" ng-model="vm.search">
+<ul>
+	<li ng-repeat="post in vm.posts | filter: vm.search">{{post.id}}{{ post.title}}</li>
+</ul>
